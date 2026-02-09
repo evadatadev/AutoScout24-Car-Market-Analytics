@@ -160,9 +160,8 @@ autoscout24-analysis/
 
 ## ⚙️ Installation & Nutzung
 
----
-### 1. Repository klonen
 ```bash
+# Repository klonen
 git clone <REPO-URL>
 cd autoscout24-analysis
 
@@ -172,3 +171,4 @@ pip install -r requirements.txt
 # Notebooks starten
 jupyter notebook
 ---
+```
