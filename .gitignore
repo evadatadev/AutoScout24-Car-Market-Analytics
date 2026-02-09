@@ -1,0 +1,45 @@
+# -------------------------
+# JUPYTER NOTEBOOKS
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# PYTHON
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# -------------------------
+# DATA SCIENCE / ML
+# -------------------------
+# Model artifacts
+## ergänzen
+
+# Large temporary files
+## ergänzen
+
+# -------------------------
+# OS / EDITOR FILES
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# -------------------------
+# LOGS / TEMP
+# -------------------------
+*.log
+*.tmp
+*.temp
+
+
