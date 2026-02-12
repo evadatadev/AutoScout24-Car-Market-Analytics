@@ -1,4 +1,3 @@
-
 # 📘 Analyse, Machine Learning & Dashboard – Projektstruktur
 
 ## **Phase 1 — Daten (Aufgabe 1.1)**
@@ -120,11 +119,9 @@ Beispiele:
 
 ### **4.6 Weitere Modelle**
 
-* Random Forest
-* Gradient Boosting
-* XGBoost / LightGBM
-* Ridge / Lasso
-* k-Nearest Neighbors
+* CatBoost (Auswahl aufgrund von Datensatz mit vielen Kategorien)
+* LightGBM (Auswahl aufgrund von vielen Zeilen (30k+)
+* XGBoost (Auswahl aufgrund der Erwartung, dass es gut als Benchmark und für Präsentation ist)
 
 ### **4.7 Modellvergleich**
 

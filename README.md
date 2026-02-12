@@ -23,7 +23,9 @@ Die Arbeit wurde in mehreren Jupyter Notebooks durchgeführt und durch zusätzli
 
 ## 📊 Datensatz
 
-**Datei:** `autoscout24.csv`Der Datensatz enthält Informationen über verkaufte Fahrzeuge, u. a.:
+**Datei:** `autoscout24.csv`
+
+Der Datensatz enthält Informationen über verkaufte Fahrzeuge, u. a.:
 
 - Hersteller
 - Modell
@@ -77,50 +79,92 @@ Zusätzliche Fragestellungen, z. B.:
 - Einfluss von Kilometerstand und Erstzulassung
 - Unterschiede zwischen Herstellern
 
+Die explorative Analyse bildet die Grundlage für das spätere Machine‑Learning‑Modell und hilft, Muster, Ausreißer und Zusammenhänge im Datensatz zu verstehen.
+
 ---
 
 ## 🤖 Machine Learning
 
 Die Modellierung erfolgt im Notebook `machine_learning.ipynb`.
 
-### ✔ Häufigste Hersteller
+Ziel ist es, den Verkaufspreis eines Autos auf Basis ausgewählter Merkmale vorherzusagen.
 
-Identifikation der **Top‑5‑Hersteller** nach Anzahl der Verkäufe.
-Alle weiteren Analysen beziehen sich ausschließlich auf diese Teilmenge.
+## ✔ Häufigste Hersteller
 
-### ✔ Durchschnittspreise
+Zunächst werden die **Top‑5‑Hersteller** nach Anzahl der Verkäufe identifiziert.
 
-Berechnung des durchschnittlichen Verkaufspreises pro Hersteller.
+Alle weiteren Analysen und Modelle beziehen sich ausschließlich auf diese Teilmenge, um die Datenmenge zu fokussieren und Verzerrungen durch seltene Marken zu vermeiden.
 
-### ✔ Modelltraining
+## ✔ Durchschnittspreise
 
-Ein Modell (z. B. **Lineare Regression**) wird trainiert, um den Verkaufspreis vorherzusagen.Verwendete Features können u. a. sein:
+Für die Top‑5‑Hersteller werden die **durchschnittlichen Verkaufspreise** berechnet (Mittelwert, Median, Anzahl der Verkäufe).
 
-- Meilenstand
-- Zulassung
-- Leistung
-- Kraftstoffart
-- Hersteller
+Dies liefert eine erste Einschätzung über Preisniveaus und Unterschiede zwischen den Herstellern.
 
-### ✔ Kategorie des Machine Learning
+## ✔ Modelltraining
 
-→ **Supervised Learning**, Regressionsproblem.
+Zur Vorhersage des Verkaufspreises wird ein Regressionsmodell trainiert.
 
-### ✔ Evaluation
+Verwendete Features (Phase‑4‑Feature‑Set):
 
-Typische Fehlermetriken:
+* **hp** (Leistung in PS)
+* **mileage** (Kilometerstand)
+* **car_age** (Fahrzeugalter)
+* **fuel** (Kraftstoffart)
+* **gear** (Getriebe)
 
-- **MAE** (Mean Absolute Error)
-- **RMSE** (Root Mean Squared Error)
-- **R²‑Score**
+Die Zielvariable ist der logarithmierte Preis (`price_log`), um Ausreißer zu reduzieren und die Verteilung zu glätten.
 
-### ✔ Weitere Modelle
+Es werden mehrere Modelle getestet:
 
-Erprobung alternativer Algorithmen, z. B.:
+* **Lineare Regression**
+* **CatBoost Regressor**
+* **LightGBM Regressor**
+* **XGBoost Regressor**
 
-- Random Forest Regressor
-- Gradient Boosting
-- Ridge/Lasso Regression
+Alle Modelle laufen über eine einheitliche **Preprocessing‑Pipeline** (Imputation, Skalierung, One‑Hot‑Encoding).
+
+## ✔ Kategorie des Machine Learning
+
+→  **Supervised Learning** , genauer: **Regression**
+
+Das Modell sagt einen kontinuierlichen Wert (Preis) vorher.
+
+## ✔ Evaluation
+
+Zur Bewertung der Modellgüte werden folgende Fehlermetriken verwendet:
+
+* **MAE** (Mean Absolute Error)
+* **RMSE** (Root Mean Squared Error)
+* **R²‑Score** (Erklärte Varianz)
+
+Zusätzlich wird eine **Baseline** berechnet, die immer nur den Durchschnittspreis des Trainingssets vorhersagt.
+
+Alle Modelle übertreffen die Baseline deutlich.
+
+## ✔ Modellvergleich
+
+Die Boosting‑Modelle (CatBoost, LightGBM, XGBoost) erzielen die besten Ergebnisse.
+
+Das beste Modell ist **CatBoost** mit:
+
+* sehr niedrigem MAE
+* geringstem RMSE
+* höchstem R² (≈ 0.91)
+
+## ✔ Feature Importance
+
+Für das beste Modell wird die **Feature Importance** analysiert.
+
+Die wichtigsten Einflussfaktoren auf den Preis sind:
+
+1. **Leistung (hp)**
+2. **Fahrzeugalter (car_age)**
+3. **Kilometerstand (mileage)**
+4. **Kraftstoffart**
+5. **Getriebe**
+
+Die Ergebnisse sind plausibel und spiegeln typische Marktmechanismen im Gebrauchtwagenhandel wider.
 
 ---
 
