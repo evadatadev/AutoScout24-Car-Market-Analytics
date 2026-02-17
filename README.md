@@ -177,7 +177,7 @@ Ein Dashboard (z. B. Tableau) fasst die wichtigsten Erkenntnisse zusammen:
 
 Ziel ist eine intuitive, visuell ansprechende Darstellung für Betrachter ohne technischen Hintergrund.
 
-Dashboard live ansehen unter: 
+Dashboard live ansehen unter:
 
 🔗 https://public.tableau.com/views/Dashboard_AutoScout24/Dashboard?:language=de-DE&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
@@ -187,17 +187,9 @@ Dashboard live ansehen unter:
 
 autoscout24-analysis/
 │
-├── data/
-│   └── autoscout24.csv
-│
-├── notebooks/
-│   ├── analyse.ipynb
-│   └── machine_learning.ipynb
-│
-├── docs/
-│   ├── Arbeitsplan.docx
-│   └── Projekt_interview.pdf
-│
+├── data/ 			# autoscout24.csv, feature_importance.csv ...
+├── notebooks/		# EDA-Analyse, Machine-Learning-Notebook
+├── docs/			# Aufgabenstellung, Arbeitsplan
 ├── README.md
 └── requirements.txt
 
