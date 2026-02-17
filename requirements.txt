@@ -1,1 +1,8 @@
-... coming soon
+pandas
+numpy
+seaborn
+matplotlib
+scikit-learn
+catboost
+lightgbm
+xgboost

@@ -162,7 +162,7 @@ Beispiele:
 
 ### **6.2 Inhalte des Dashboards**
 
-* Anzahl verkaufter Autos + Zeitraum
+* Anzahl verkaufter Autos
 * Markenübersicht
 * Scatterplots (Korrelationen)
 * Zeitliche Trends
@@ -179,21 +179,26 @@ Beispiele:
 
 ---
 
-## **Phase 7 — Dokumentation & Abgabe**
+## **Phase 7 — Veröffentlichung**
 
-### 🎯 Ziel: Alles sauber zusammenfassen.
+### 🎯 **Ziel:** Ergebnisse professionell aufbereiten und öffentlich zugänglich machen.
 
-### **7.1 Optional: Bericht / Notebook**
+## **7.1 Projekt auf GitHub veröffentlichen**
 
-* Einleitung
-* Datenbeschreibung
-* Analyseergebnisse
-* ML-Modelle
-* Interpretation
-* Fazit
+* Repository anlegen (inkl. klarer Ordnerstruktur: `data/`, `notebooks/`, `src/`, `models/`, `dashboard/`)
+* README erstellen mit Projektbeschreibung, Vorgehen, Ergebnissen und Screenshots
+* Jupyter Notebooks bereinigen (Outputs, Reihenfolge, Kommentare)
+* Code dokumentieren und Requirements‑Datei hinzufügen
+* Modellartefakte referenzieren
+* Lizenz und Kontaktinformationen ergänzen
 
-### **7.2 Präsentation**
+---
 
-* Wichtigste Erkenntnisse
-* Visuelle Highlights
-* Handlungsempfehlungen
+## **7.2 Dashboard über Tableau Public bereitstellen**
+
+* Dashboard final prüfen (Filterlogik, Layout, Farben, Beschriftungen)
+* Datenquelle als Extrakt einbetten
+* Über Tableau Desktop auf Tableau Public veröffentlichen
+* Titel, Kurzbeschreibung und Tags hinzufügen
+* Öffentlichen Link generieren und testen
+* Link in GitHub‑README einbinden

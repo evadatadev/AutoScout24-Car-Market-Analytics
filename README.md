@@ -1,5 +1,3 @@
-# 📝 ENTWURF
-
 # 🚗 AutoScout24 – Analyse, Visualisierung & Preisvorhersage
 
 Dieses Projekt untersucht einen Datensatz von AutoScout24 mit Informationen über verkaufte Fahrzeuge.
@@ -15,7 +13,7 @@ Das Projekt umfasst vier zentrale Bereiche:
 1. **Explorative Datenanalyse (EDA)**
 2. **Visualisierung & statistische Zusammenhänge**
 3. **Machine Learning – Preisvorhersage**
-4. **Dashboard – visuelle Aufbereitung der Ergebnisse**
+4. **Dashboard – visuelle Aufbereitung der Ergebnisse in Tableau**
 
 Die Arbeit wurde in mehreren Jupyter Notebooks durchgeführt und durch zusätzliche Dokumente ergänzt.
 
@@ -30,7 +28,7 @@ Der Datensatz enthält Informationen über verkaufte Fahrzeuge, u. a.:
 - Hersteller
 - Modell
 - Zulassungsjahr
-- Meilenstand
+- Kilometerstand
 - Kraftstoffart
 - Leistung (PS)
 - Getriebe
@@ -65,7 +63,6 @@ Analyse numerischer Merkmale mittels:
 
 - Korrelationsmatrix
 - Scatterplots
-- Heatmaps
 
 ### ✔ Zeitliche Entwicklungen
 
@@ -180,6 +177,10 @@ Ein Dashboard (z. B. Tableau) fasst die wichtigsten Erkenntnisse zusammen:
 
 Ziel ist eine intuitive, visuell ansprechende Darstellung für Betrachter ohne technischen Hintergrund.
 
+Dashboard live ansehen unter: 
+
+🔗 https://public.tableau.com/views/Dashboard_AutoScout24/Dashboard?:language=de-DE&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
 ---
 
 ## 📁 Projektstruktur
@@ -202,6 +203,12 @@ autoscout24-analysis/
 
 ---
 
+## 🐍 Python‑Version
+
+Dieses Projekt wurde mit **Python 3.13** entwickelt und getestet.
+
+---
+
 ## ⚙️ Installation & Nutzung
 
 ```bash
@@ -216,3 +223,15 @@ pip install -r requirements.txt
 jupyter notebook
 ---
 ```
+
+---
+
+## 📄 Lizenz
+
+MIT License
+
+---
+
+## 🤝 Mitwirken
+
+Pull Requests und Issues sind willkommen.
