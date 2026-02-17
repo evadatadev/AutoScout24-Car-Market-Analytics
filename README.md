@@ -185,13 +185,15 @@ Dashboard live ansehen unter:
 
 ## 📁 Projektstruktur
 
+```
 autoscout24-analysis/
 │
-├── data/ 			# autoscout24.csv, feature_importance.csv ...
+├── data/ 		# autoscout24.csv, feature_importance.csv ...
 ├── notebooks/		# EDA-Analyse, Machine-Learning-Notebook
-├── docs/			# Aufgabenstellung, Arbeitsplan
+├── docs/		# Aufgabenstellung, Arbeitsplan
 ├── README.md
 └── requirements.txt
+```
 
 ---
 
