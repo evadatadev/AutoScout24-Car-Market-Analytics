@@ -179,7 +179,7 @@ Ziel ist eine intuitive, visuell ansprechende Darstellung für Betrachter ohne t
 
 Dashboard live ansehen unter:
 
-🔗 https://public.tableau.com/views/Dashboard_AutoScout24/Dashboard?:language=de-DE&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+🔗 https://public.tableau.com/app/profile/evadatadev/viz/Dashboard_AutoScout24/Dashboard 
 
 ---
 
