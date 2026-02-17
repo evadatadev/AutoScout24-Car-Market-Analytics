@@ -207,7 +207,7 @@ Dieses Projekt wurde mit **Python 3.13** entwickelt und getestet.
 
 ```bash
 # Repository klonen
-git clone <REPO-URL>
+git clone https://github.com/evadatadev/AutoScout24-Car-Market-Analytics.git
 cd autoscout24-analysis
 
 # Abhängigkeiten installieren
