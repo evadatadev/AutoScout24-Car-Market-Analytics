@@ -1,0 +1,9 @@
+Feature,Importance,Label
+hp,"47,90173081915609",Leistung (PS)
+car_age,"24,541762203495388",Fahrzeugalter
+mileage,"18,639620010117593",Kilometerstand
+fuel_Diesel,"3,237040678237922",Kraftstoff: Diesel
+gear_Manual,"2,209302508145223",Getriebe: Manuell
+fuel_Gasoline,"1,6433797602888867",Kraftstoff: Benzin
+gear_Automatic,"1,428113516445533",Getriebe: Automatik
+fuel_Electric,"0,22085238725580328",Kraftstoff: Elektro

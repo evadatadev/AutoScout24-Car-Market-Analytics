@@ -1,0 +1,5 @@
+Model,MAE,RMSE,R2,Best
+CatBoost,0.1199,0.1562,0.9084,True
+XGBoost,0.1205,0.1575,0.9069,False
+LightGBM,0.121,0.1583,0.9059,False
+LinearRegression,0.1518,0.1963,0.8553,False
